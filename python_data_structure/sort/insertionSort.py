@@ -26,9 +26,9 @@ class insertionSort(object):
         # i: 循环的轮数，从1开始
         # j: 每轮比较的索引的范围， [i-1, 0]
         for i in range(1,length):
-            for j in range(i-1, 0, -1):
-                if self.item[j+1] < self.item[j]:
-                    self.item[j+1], self.item[j] = self.item[j], self.item[j+1]
+            for j in range(i, 0, -1):
+                if self.item[j] < self.item[j-1]:
+                    self.item[j], self.item[j-1] = self.item[j-1], self.item[j]
                 else:
                     break
                     
