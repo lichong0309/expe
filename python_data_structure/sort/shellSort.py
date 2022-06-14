@@ -48,3 +48,4 @@ if __name__ == "__main__":
     print("排序前：", s.item)
     s.sort()
     print("排序后：", s.item)
+
