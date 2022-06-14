@@ -55,7 +55,7 @@ class heapSort(object):
             self.buildBigHeap(i, (length-1))
         
         # 使用初始化的大根堆，对元素进行排序
-        # 初始化的大根堆的root节点为最大值
+        # 初始化的大根堆的root节点为所有元素中的最大值
         # root节点和最后一个元素交换位置后，则对于新的root节点来说，需要维持最大堆的特性，所以对于新的root节点需要重新执行buildBigHeap()
         # i: 排序的次数，以为最后剩余一个元素的不需要排序[0, length-1-1]，所以是range(0, length-1)
         for i in range(0, length-1):
