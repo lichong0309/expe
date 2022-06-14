@@ -37,7 +37,7 @@ if __name__ == "__main__":
     import numpy as np   
     import copy
     
-    randomItem = np.random.randint(100, size=5)
+    randomItem = np.random.randint(100, size=5).tolist()
     objItem = copy.deepcopy(randomItem)
     
     s = insertionSort(objItem)

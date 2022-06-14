@@ -51,7 +51,7 @@ if __name__ == "__main__":
     import numpy as np   
     import copy
     
-    randomItem = np.random.randint(100, size=10)
+    randomItem = np.random.randint(100, size=10).tolist()
     objItem = copy.deepcopy(randomItem)
     
     s = quickSort(objItem)

@@ -26,11 +26,12 @@ class mergeSort(object):
             afterSortLeft = self.merge(itemLeft)
             afterSortRight = self.merge(itemRight)
             
-            afterSort = []
+            afterSort = []          # 初始化，接受排序的元素
             
             left_i = 0
             right_i = 0
             
+            # 排序，放到afterSort中
             while left_i < len(afterSortLeft) and right_i < len(afterSortRight):
                 if afterSortLeft[left_i] <= afterSortRight[right_i]:
                     afterSort.append(afterSortLeft[left_i])
@@ -57,10 +58,10 @@ if __name__ == "__main__":
     import numpy as np   
     import copy
     
-    # randomItem = np.random.randint(100, size=5)
-    # objItem = copy.deepcopy(randomItem)
-    
-    objItem = [2, 86, 33, 88, 22]
+    randomItem = np.random.randint(100, size=5).tolist()
+    objItem = copy.deepcopy(randomItem)
+    print(objItem)
+    # objItem = [2, 86, 33, 88, 22]
     
     s = mergeSort(objItem)
     print("排序前：", s.item)
